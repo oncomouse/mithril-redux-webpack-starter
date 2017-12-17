@@ -8,8 +8,8 @@
       "start": "webpack-dev-server",
       "build": "env NODE_ENV=production webpack",
       "analyze": "env ANALYZE=1 NODE_ENV=production webpack",
-	"format": "prettier --write 'app/**/*.js'",
-    "format:check": "prettier --list-different 'app/**/*.js'"
+      "format": "prettier --write 'app/**/*.js'",
+      "format:check": "prettier --list-different 'app/**/*.js'"
    },
    "devDependencies": {
       "autoprefixer": "^6.3.6",
@@ -40,7 +40,7 @@
       "ramda": "^0.25",
       "redux": "^3.7.2",
       "redux-logger": "^3.0.6",
-      "redux-persist": "^4.10.2",
+      "redux-persist": "^5.0.0",
       "redux-saga": "^0.15.6",
       "sass-loader": "^6.0.6",
       "style-loader": "^0.13.1",

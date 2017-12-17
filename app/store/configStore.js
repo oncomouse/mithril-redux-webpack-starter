@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
-import { autoRehydrate } from 'redux-persist'
+import { persistStore, persistCombineReducers } from 'redux-persist'
+import storage from 'redux-persist/es/storage'
 import createSagaMiddleware from 'redux-saga'
 import reducers from '../reducers'
 import sagas from '../sagas'
@@ -9,15 +10,18 @@ export default () => {
 	const sagaMiddleware = createSagaMiddleware()
 	const enhancer =
 		process.env.NODE_ENV === 'production'
-			? compose(autoRehydrate(), applyMiddleware(sagaMiddleware))
+			? compose(applyMiddleware(sagaMiddleware))
 			: compose(
-					autoRehydrate(),
 					applyMiddleware(sagaMiddleware, require('redux-logger').default) // Only include redux-logger if we are in development
 				)
-	const reducer = combineReducers(reducers)
+	const reducer = persistCombineReducers({
+		key: APP_TITLE,
+		storage
+	}, reducers);
 	const initialStore = {}
 
 	const store = createStore(reducer, initialStore, enhancer)
+	const persistor = persistStore(store);
 	sagaMiddleware.run(createDynamicSaga(START_SAGAS, sagas()))
 
 	if (module.hot) {
@@ -34,5 +38,5 @@ export default () => {
 			})
 		)
 	}
-	return store
+	return {store, persistor}
 }
