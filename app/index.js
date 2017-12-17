@@ -9,7 +9,7 @@ const {store, persistor} = configStore();
 
 const render = _ => {
 	m.mount(document.body, {view: function () {
-		return m(PersistGate, {persistor},
+		return m(PersistGate, {persistor, loading: m('h1', {}, 'Loading…')},
 			m(Provider.init(store, m, App))
 		)
 	}})

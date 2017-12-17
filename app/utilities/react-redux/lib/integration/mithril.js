@@ -3,7 +3,7 @@ import m from 'mithril'
 export default class PersistGate {
 	oninit(vnode) {
 		const {attrs, children} = vnode;
-		attrs.loading = attrs.loading || 'div';
+		attrs.loading = attrs.loading || m('div');
 	}
 	oncreate(vnode) {
 		this._unsubscribe = vnode.attrs.persistor.subscribe(
@@ -16,7 +16,7 @@ export default class PersistGate {
 	}
 	view(vnode) {
 		const {children, attrs, state} = vnode;
-		return state.bootstrapped ? m('div', {}, children) : m(attrs.loading);
+		return m('div', {}, (state.bootstrapped ? children : attrs.loading));
 	}
 	handlePersistorState() {
 		const { persistor } = this.attrs;
