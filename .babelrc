@@ -1,0 +1,17 @@
+{
+	"presets": [
+		["env", {
+			"modules": false,
+			"targets": {
+				"node": "current",
+				"browsers": "> 5%"
+			},
+			"useBuiltIns": true
+		}],
+		"stage-0"
+	],
+	"plugins": [
+		"ramda",
+		"tailcall-optimization"
+	]
+}
