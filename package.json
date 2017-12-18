@@ -10,7 +10,7 @@
       "analyze": "env ANALYZE=1 NODE_ENV=production webpack",
       "format": "prettier --write 'app/**/*.js'",
       "format:check": "prettier --list-different 'app/**/*.js'",
-	  "lint": "eslint app/"
+	    "lint": "eslint app/"
    },
    "devDependencies": {
       "autoprefixer": "^6.3.6",
