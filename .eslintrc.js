@@ -32,14 +32,21 @@ module.exports = {
       'error'
       , 2
     ]
+    , 'linebreak-style': [
+      'error'
+      , 'unix'
+    ]
     // Enforce a max line-length of 80 chars:
     , 'max-len': [
       'error'
       , { 'code': 80 }
     ]
-    , 'linebreak-style': [
+    , 'object-curly-spacing': [
       'error'
-      , 'unix'
+      , 'always'
+    ]
+    , 'no-prototype-builtins': [
+      'error'
     ]
     , 'quotes': [
       'error'
