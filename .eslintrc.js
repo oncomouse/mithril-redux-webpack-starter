@@ -44,6 +44,9 @@ module.exports = {
       'error'
       , { 'code': 80 }
     ]
+    , 'no-extra-bind': [
+      'error'
+    ]
     , 'no-extra-parens': [
       'error'
       , 'all'
@@ -53,6 +56,9 @@ module.exports = {
         , 'nestedBinaryExpressions': false
         , 'returnAssign': false
       }
+    ]
+    , 'no-implicit-coercion': [
+      'error'
     ]
     , 'no-prototype-builtins': [
       'error'
