@@ -1,11 +1,11 @@
 module.exports = {
   'env': {
     'browser': true
-    ,'commonjs': true
-    ,'es6': true
+    , 'commonjs': true
+    , 'es6': true
   }
-  ,'extends': 'eslint:recommended'
-  ,'globals': {
+  , 'extends': 'eslint:recommended'
+  , 'globals': {
     'process': false
     , 'APP_TITLE': false
   }
@@ -13,11 +13,18 @@ module.exports = {
     'ecmaFeatures': {
       'jsx': true
     }
-    ,'sourceType': 'module'
+    , 'sourceType': 'module'
   }
-  ,'rules': {
+  , 'rules': {
+    'comma-spacing': [
+      'error'
+      , {
+        'before': false
+        , 'after': true
+      }
+    ]
     // I prefer commas at the start of lists; disable to turn off:
-    'comma-style': [
+    , 'comma-style': [
       'error'
       , 'first'
     ]
@@ -32,15 +39,15 @@ module.exports = {
     ]
     , 'linebreak-style': [
       'error'
-      ,'unix'
+      , 'unix'
     ]
-    ,'quotes': [
+    , 'quotes': [
       'error'
-      ,'single'
+      , 'single'
     ]
-    ,'semi': [
+    , 'semi': [
       'error'
-      ,'never'
+      , 'never'
     ]
   }
 }

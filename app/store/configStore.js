@@ -20,7 +20,7 @@ export default () => {
   const reducer = persistCombineReducers(
     {
       key: APP_TITLE
-      ,storage
+      , storage
     },
     reducers
   )
@@ -38,7 +38,7 @@ export default () => {
     module.hot.accept('sagas', () =>
       store.dispatch({
         type: START_SAGAS
-        ,payload: {
+        , payload: {
           sagas: [...require('sagas').default()]
         }
       })
