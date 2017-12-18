@@ -27,9 +27,9 @@ class App {
 	view(vnode) {
 		const { state } = vnode
 		return m(Sample, {
-			samples: state.props.samples,
-			sampleAction: this.sampleEvent.bind(state),
-			resetAction: this.resetEvent.bind(state)
+			samples: state.props.samples
+			,sampleAction: this.sampleEvent.bind(state)
+			,resetAction: this.resetEvent.bind(state)
 		})
 	}
 }

@@ -7,7 +7,7 @@ import configStore from './store/configStore'
 
 const { store, persistor } = configStore()
 
-const render = _ => {
+const render = () => {
 	m.mount(document.body, {
 		view: function() {
 			return m(

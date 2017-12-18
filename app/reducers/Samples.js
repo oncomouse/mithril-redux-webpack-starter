@@ -12,8 +12,8 @@ const actionMaps = {
 			.substr(0, 7)
 		state = R.concat([randomString], state)
 		return state
-	},
-	[RESET_STATE]: (state, action) => {
+	}
+	,[RESET_STATE]: (state, action) => {
 		return initialState
 	}
 	// Do something at REHYDRATE (when persisted store loads from storage)

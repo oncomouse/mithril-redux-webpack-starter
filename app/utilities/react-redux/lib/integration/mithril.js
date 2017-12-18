@@ -2,7 +2,7 @@ import m from 'mithril' // eslint-disable-line import/no-unresolved
 
 export default class PersistGate {
 	oninit(vnode) {
-		const { attrs, children } = vnode
+		const { attrs } = vnode
 		attrs.loading = attrs.loading || m('div')
 	}
 	oncreate(vnode) {
@@ -11,7 +11,7 @@ export default class PersistGate {
 		)
 		this.handlePersistorState.apply(vnode)
 	}
-	onbeforeremove(vnode) {
+	onbeforeremove() {
 		this._unsubscribe && this._unsubscribe()
 	}
 	view(vnode) {
