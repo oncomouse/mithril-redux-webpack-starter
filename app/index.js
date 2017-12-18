@@ -19,10 +19,3 @@ const render = _ => {
 	})
 }
 loadPolyfills().then(render)
-
-if (module.hot) {
-	module.hot.accept('reducers', _ =>
-		store.replaceReducer(combineReducers(require('./reducers')).default)
-	)
-	module.hot.accept()
-}
