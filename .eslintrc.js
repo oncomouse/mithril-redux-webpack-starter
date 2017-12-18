@@ -44,10 +44,6 @@ module.exports = {
       'error'
       , { 'code': 80 }
     ]
-    , 'object-curly-spacing': [
-      'error'
-      , 'always'
-    ]
     , 'no-extra-parens': [
       'error'
       , 'all'
@@ -63,6 +59,10 @@ module.exports = {
     ]
     , 'no-template-curly-in-string': [
       'error'
+    ]
+    , 'object-curly-spacing': [
+      'error'
+      , 'always'
     ]
     , 'quotes': [
       'error'
