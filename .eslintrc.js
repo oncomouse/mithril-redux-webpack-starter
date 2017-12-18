@@ -108,6 +108,10 @@ module.exports = {
       'error'
       , 'single'
     ]
+    , 'rest-spread-spacing': [
+      'error'
+      , 'never'
+    ]
     , 'semi': [
       'error'
       , 'never'
