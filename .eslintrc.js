@@ -34,6 +34,10 @@ module.exports = {
       'error'
       , 'first'
     ]
+    , 'eol-last': [
+      'error'
+      , 'never'
+    ]
     , 'indent': [
       'error'
       , 2
