@@ -63,6 +63,9 @@ module.exports = {
     , 'no-implicit-globals': [
       'error'
     ]
+    , 'no-magic-numbers': [
+      'error'
+    ]
     , 'no-prototype-builtins': [
       'error'
     ]
