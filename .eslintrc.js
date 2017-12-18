@@ -58,6 +58,9 @@ module.exports = {
     , 'no-prototype-builtins': [
       'error'
     ]
+    , 'no-template-curly-in-string': [
+      'error'
+    ]
     , 'quotes': [
       'error'
       , 'single'
