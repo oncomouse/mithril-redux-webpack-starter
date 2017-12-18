@@ -16,7 +16,10 @@ module.exports = {
     , 'sourceType': 'module'
   }
   , 'rules': {
-    'comma-spacing': [
+    'array-callback-return': [
+      'error'
+    ]
+    , 'comma-spacing': [
       'error'
       , {
         'before': false
