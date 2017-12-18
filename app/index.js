@@ -7,7 +7,7 @@ import configStore from './store/configStore'
 
 const { store, persistor } = configStore()
 
-const render = _ => {
+const render = () => {
 	m.mount(document.body, {
 		view: function() {
 			return m(
@@ -19,10 +19,3 @@ const render = _ => {
 	})
 }
 loadPolyfills().then(render)
-
-if (module.hot) {
-	module.hot.accept('reducers', _ =>
-		store.replaceReducer(combineReducers(require('./reducers')).default)
-	)
-	module.hot.accept()
-}

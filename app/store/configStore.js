@@ -12,12 +12,15 @@ export default () => {
 		process.env.NODE_ENV === 'production'
 			? compose(applyMiddleware(sagaMiddleware))
 			: compose(
-					applyMiddleware(sagaMiddleware, require('redux-logger').default) // Only include redux-logger if we are in development
-				)
+				applyMiddleware(
+					sagaMiddleware
+					, require('redux-logger').default
+				) // Only include redux-logger if we are in development
+			)
 	const reducer = persistCombineReducers(
 		{
-			key: APP_TITLE,
-			storage
+			key: APP_TITLE
+			,storage
 		},
 		reducers
 	)
@@ -34,8 +37,8 @@ export default () => {
 		)
 		module.hot.accept('sagas', () =>
 			store.dispatch({
-				type: START_SAGAS,
-				payload: {
+				type: START_SAGAS
+				,payload: {
 					sagas: [...require('sagas').default()]
 				}
 			})

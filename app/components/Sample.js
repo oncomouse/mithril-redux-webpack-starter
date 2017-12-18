@@ -12,7 +12,7 @@ export default class Sample {
 				'ul',
 				{},
 				attrs.samples.map((sample, id) =>
-					m('li', { key: 'id' }, m.trust(sample))
+					m('li', { key: id }, m.trust(sample))
 				)
 			),
 			m('button', { onclick: attrs.sampleAction }, 'Click Me!'),
