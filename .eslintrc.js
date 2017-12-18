@@ -84,6 +84,10 @@ module.exports = {
     ]
     , 'no-magic-numbers': [
       'error'
+      , {
+        'ignore': [0, 1]
+        , 'ignoreArrayIndexes': true
+      }
     ]
     , 'no-prototype-builtins': [
       'error'
