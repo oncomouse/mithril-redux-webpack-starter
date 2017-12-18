@@ -23,7 +23,7 @@ module.exports = {
 		]
         , "indent": [
             "error"
-            , "tab"
+            , 2
         ]
 		// Enforce a max line-length of 80 chars:
 		, "max-len": [
