@@ -93,6 +93,9 @@ module.exports = {
       'error'
       , 'always'
     ]
+    , 'prefer-const': [
+      'error'
+    ]
     , 'quotes': [
       'error'
       , 'single'

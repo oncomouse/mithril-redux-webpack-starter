@@ -20,7 +20,7 @@ export default class PersistGate {
   }
   handlePersistorState() {
     const { persistor } = this.attrs
-    let { bootstrapped } = persistor.getState()
+    const { bootstrapped } = persistor.getState()
     if (bootstrapped) {
       if (this.attrs.onBeforeLift) {
         Promise.resolve(this.attrs.onBeforeLift())
