@@ -60,6 +60,9 @@ module.exports = {
     , 'no-implicit-coercion': [
       'error'
     ]
+    , 'no-implicit-globals': [
+      'error'
+    ]
     , 'no-prototype-builtins': [
       'error'
     ]
