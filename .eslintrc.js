@@ -55,6 +55,9 @@ module.exports = {
       'error'
       , { 'code': 80 }
     ]
+    , 'no-array-constructor': [
+      'error'
+    ]
     , 'no-extra-bind': [
       'error'
     ]
