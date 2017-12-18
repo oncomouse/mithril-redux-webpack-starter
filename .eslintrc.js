@@ -19,6 +19,9 @@ module.exports = {
     'array-callback-return': [
       'error'
     ]
+    , 'camelcase': [
+      'error'
+    ]
     , 'comma-spacing': [
       'error'
       , {
