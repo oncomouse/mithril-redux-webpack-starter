@@ -38,6 +38,10 @@ module.exports = {
       'error'
       , 'never'
     ]
+    , 'generator-star-spacing': [
+      'error',
+      'after'
+    ]
     , 'indent': [
       'error'
       , 2
