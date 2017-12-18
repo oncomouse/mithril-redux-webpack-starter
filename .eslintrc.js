@@ -100,6 +100,9 @@ module.exports = {
     , 'prefer-const': [
       'error'
     ]
+    , 'prefer-spread': [
+      'error'
+    ]
     , 'quotes': [
       'error'
       , 'single'
