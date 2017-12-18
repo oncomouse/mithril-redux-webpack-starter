@@ -24,8 +24,8 @@ export default class PersistGate {
     if (bootstrapped) {
       if (this.attrs.onBeforeLift) {
         Promise.resolve(this.attrs.onBeforeLift())
-          .then(() => (this.state.bootstrapped = true))
-          .catch(() => (this.state.bootstrapped = true))
+          .then(() => this.state.bootstrapped = true)
+          .catch(() => this.state.bootstrapped = true)
       } else {
         this.state.bootstrapped = true
       }

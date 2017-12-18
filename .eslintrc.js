@@ -45,6 +45,16 @@ module.exports = {
       'error'
       , 'always'
     ]
+    , 'no-extra-parens': [
+      'error'
+      , 'all'
+      , {
+        'conditionalAssign': false
+        , 'ignoreJSX': 'all'
+        , 'nestedBinaryExpressions': false
+        , 'returnAssign': false
+      }
+    ]
     , 'no-prototype-builtins': [
       'error'
     ]
