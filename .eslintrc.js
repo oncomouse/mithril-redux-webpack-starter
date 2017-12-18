@@ -16,6 +16,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+		// I prefer commas at the start of lists; disable to turn off:
 		"comma-style": [
 			"error"
 			, "first"
@@ -24,6 +25,7 @@ module.exports = {
             "error"
             , "tab"
         ]
+		// Enforce a max line-length of 80 chars:
 		, "max-len": [
 			"error"
 			, { "code": 80 }
