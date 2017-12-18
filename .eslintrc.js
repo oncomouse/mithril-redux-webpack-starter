@@ -86,6 +86,9 @@ module.exports = {
     , 'no-template-curly-in-string': [
       'error'
     ]
+    , 'no-trailing-spaces': [
+      'error'
+    ]
     , 'object-curly-spacing': [
       'error'
       , 'always'
