@@ -15,7 +15,7 @@
    "devDependencies": {
       "autoprefixer": "^6.3.6",
       "babel-core": "^6.26.0",
-			"babel-eslint": "^8.0.3",
+      "babel-eslint": "^8.0.3",
       "babel-loader": "^7.1.1",
       "babel-plugin-ramda": "^1.2.0",
       "babel-plugin-tailcall-optimization": "^1.0.11",
@@ -25,6 +25,7 @@
       "css-loader": "^0.23.1",
       "css-mqpacker": "^5.0.1",
       "eslint": "^4.13.1",
+      "eslint-plugin-react": "^7.5.1",
       "extract-text-webpack-plugin": "^3.0.0",
       "file-loader": "^0.9.0",
       "html-webpack-plugin": "^2.30.1",

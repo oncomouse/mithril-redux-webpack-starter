@@ -1,4 +1,4 @@
-const INDENT_SPACES = 4;
+const INDENT_SPACES = 4
 
 module.exports = {
     'env': {
@@ -19,6 +19,14 @@ module.exports = {
         , 'sourceType': 'module'
     }
     , 'parser': 'babel-eslint'
+    , 'plugins': [
+        'react'
+    ]
+    , 'settings': {
+        'react': {
+            'pragma': 'm'
+        }
+    }
     , 'rules': {
         'array-callback-return': [
             'error'
@@ -61,8 +69,8 @@ module.exports = {
             , 'never'
         ]
         , 'generator-star-spacing': [
-            'error',
-            'after'
+            'error'
+            , 'after'
         ]
         , 'indent': [
             'error'
@@ -137,6 +145,32 @@ module.exports = {
         , 'quotes': [
             'error'
             , 'single'
+        ]
+        , 'react/jsx-indent': [
+            'error'
+            , INDENT_SPACES
+        ]
+        , 'react/jsx-max-props-per-line': [
+            'error'
+            , {
+                'maximum': 1
+                , 'when': 'always'
+            }
+        ]
+        , 'react/jsx-one-expression-per-line': [
+            'error'
+        ]
+        , 'react/jsx-pascal-case': [
+            'error'
+        ]
+        , 'react/jsx-tag-spacing': [
+            'error'
+        ]
+        , 'react/jsx-uses-react': [
+            'error'
+        ]
+        , 'react/jsx-uses-vars': [
+            'error'
         ]
         , 'rest-spread-spacing': [
             'error'
