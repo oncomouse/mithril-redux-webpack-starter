@@ -26,4 +26,4 @@ const addProps = function(Component) {
     return Component
 }
 
-export default addProps;
+export default addProps
