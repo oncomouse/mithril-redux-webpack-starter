@@ -12,6 +12,13 @@
 	],
 	"plugins": [
 		"ramda",
-		"tailcall-optimization"
+		"tailcall-optimization",
+		[
+			"transform-react-jsx",
+			{
+				"pragma":
+				"m"
+			}
+		]
 	]
 }
