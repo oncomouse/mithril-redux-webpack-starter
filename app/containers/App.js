@@ -2,6 +2,7 @@ import m from 'mithril'
 import R from 'ramda'
 import { bindActionCreators } from 'redux'
 import { connect } from 'mithril-redux'
+import { addProps } from '../utilities/mithril-props'
 import * as SampleActions from '../actions/sampleActions'
 import Sample from '../components/Sample'
 
@@ -34,4 +35,4 @@ class App {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(addProps(App))
