@@ -28,8 +28,8 @@ class App {
 		const { state } = vnode
 		return m(Sample, {
 			samples: state.props.samples
-			,sampleAction: this.sampleEvent.bind(state)
-			,resetAction: this.resetEvent.bind(state)
+			, sampleAction: this.sampleEvent.bind(state)
+			, resetAction: this.resetEvent.bind(state)
 		})
 	}
 }
