@@ -1,3 +1,5 @@
+const INDENT_SPACES = 4;
+
 module.exports = {
     'env': {
         'browser': true
@@ -64,7 +66,7 @@ module.exports = {
         ]
         , 'indent': [
             'error'
-            , 4
+            , INDENT_SPACES
         ]
         , 'jsx-quotes': [
             'error'
@@ -77,7 +79,12 @@ module.exports = {
         // Enforce a max line-length of 80 chars:
         , 'max-len': [
             'error'
-            , { 'code': 80 }
+            , {
+                'code': 80
+                , 'ignoreComments': true
+                , 'ignoreTrailingComments': true
+                , 'ignoreUrls': true
+            }
         ]
         , 'no-array-constructor': [
             'error'
