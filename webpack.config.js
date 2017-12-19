@@ -7,7 +7,7 @@ const noop = require('noop-webpack-plugin')
 const path = require('path')
 
 /* Set APP_TITLE to the title of your application.*/
-const APP_TITLE = 'My Sample App fda'
+const APP_TITLE = 'My Sample App'
 const {ANALYZE} = process.env
 
 const nodeEnv = process.env.NODE_ENV || 'development'
@@ -25,8 +25,9 @@ const postCSSplugins = function() {
 var webpackConfig = {
     devtool: isProd ? 'hidden-source-map' : 'eval'
     , entry: {
-        js: isProd ? ['index'] : [
-            'index'
+        js: [
+            'stylesheets/global.scss'
+            , 'index'
         ]
     }
     , output: {
