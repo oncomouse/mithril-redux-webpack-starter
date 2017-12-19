@@ -1,5 +1,4 @@
 import m from 'mithril'
-// You can use CSS Modules if you prefer:
 //import styles from '../stylesheets/components/Sample.scss'
 
 export default class Sample {
