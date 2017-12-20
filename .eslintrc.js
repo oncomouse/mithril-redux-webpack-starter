@@ -1,4 +1,8 @@
 const INDENT_SPACES = 4
+const LINE_LENGTH = 80
+const OFF = 0
+const WARNING = 1
+const ERROR = 2
 
 module.exports = {
     'env': {
@@ -28,18 +32,14 @@ module.exports = {
         }
     }
     , 'rules': {
-        'array-callback-return': [
-            'error'
-        ]
-        , 'camelcase': [
-            'error'
-        ]
+        'array-callback-return': ERROR
+        , 'camelcase': ERROR
         , 'comma-dangle': [
-            'error'
+            ERROR
             , 'never'
         ]
         , 'comma-spacing': [
-            'error'
+            ERROR
             , {
                 'before': false
                 , 'after': true
@@ -47,7 +47,7 @@ module.exports = {
         ]
         // I prefer commas at the start of lists; disable to turn off:
         , 'comma-style': [
-            'error'
+            ERROR
             , 'first'
             , {
                 'exceptions': {
@@ -65,43 +65,39 @@ module.exports = {
             }
         ]
         , 'eol-last': [
-            'error'
+            ERROR
             , 'never'
         ]
         , 'generator-star-spacing': [
-            'error'
+            ERROR
             , 'after'
         ]
         , 'indent': [
-            'error'
+            ERROR
             , INDENT_SPACES
         ]
         , 'jsx-quotes': [
-            'error'
+            ERROR
             , 'prefer-double'
         ]
         , 'linebreak-style': [
-            'error'
+            ERROR
             , 'unix'
         ]
         // Enforce a max line-length of 80 chars:
         , 'max-len': [
-            'error'
+            ERROR
             , {
-                'code': 80
+                'code': LINE_LENGTH
                 , 'ignoreComments': true
                 , 'ignoreTrailingComments': true
                 , 'ignoreUrls': true
             }
         ]
-        , 'no-array-constructor': [
-            'error'
-        ]
-        , 'no-extra-bind': [
-            'error'
-        ]
+        , 'no-array-constructor': ERROR
+        , 'no-extra-bind': ERROR
         , 'no-extra-parens': [
-            'error'
+            ERROR
             , 'all'
             , {
                 'conditionalAssign': false
@@ -110,75 +106,51 @@ module.exports = {
                 , 'returnAssign': false
             }
         ]
-        , 'no-implicit-coercion': [
-            'error'
-        ]
-        , 'no-implicit-globals': [
-            'error'
-        ]
+        , 'no-implicit-coercion': ERROR
+        , 'no-implicit-globals': ERROR
         , 'no-magic-numbers': [
-            'error'
+            ERROR
             , {
                 'ignore': [0, 1]
                 , 'ignoreArrayIndexes': true
             }
         ]
-        , 'no-prototype-builtins': [
-            'error'
-        ]
-        , 'no-template-curly-in-string': [
-            'error'
-        ]
-        , 'no-trailing-spaces': [
-            'error'
-        ]
+        , 'no-prototype-builtins': ERROR
+        , 'no-template-curly-in-string': ERROR
+        , 'no-trailing-spaces': ERROR
         , 'object-curly-spacing': [
-            'error'
+            ERROR
             , 'always'
         ]
-        , 'prefer-const': [
-            'error'
-        ]
-        , 'prefer-spread': [
-            'error'
-        ]
+        , 'prefer-const': ERROR
+        , 'prefer-spread': ERROR
         , 'quotes': [
-            'error'
+            ERROR
             , 'single'
         ]
+        , 'rest-spread-spacing': [
+            ERROR
+            , 'never'
+        ]
+        , 'semi': [
+            ERROR
+            , 'never'
+        ]
         , 'react/jsx-indent': [
-            'error'
+            ERROR
             , INDENT_SPACES
         ]
         , 'react/jsx-max-props-per-line': [
-            'error'
+            ERROR
             , {
                 'maximum': 1
                 , 'when': 'always'
             }
         ]
-        , 'react/jsx-one-expression-per-line': [
-            'error'
-        ]
-        , 'react/jsx-pascal-case': [
-            'error'
-        ]
-        , 'react/jsx-tag-spacing': [
-            'error'
-        ]
-        , 'react/jsx-uses-react': [
-            'error'
-        ]
-        , 'react/jsx-uses-vars': [
-            'error'
-        ]
-        , 'rest-spread-spacing': [
-            'error'
-            , 'never'
-        ]
-        , 'semi': [
-            'error'
-            , 'never'
-        ]
+        , 'react/jsx-one-expression-per-line': ERROR
+        , 'react/jsx-pascal-case': ERROR
+        , 'react/jsx-tag-spacing': ERROR
+        , 'react/jsx-uses-react': ERROR
+        , 'react/jsx-uses-vars': ERROR
     }
 }
