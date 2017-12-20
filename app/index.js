@@ -2,7 +2,7 @@ import m from 'mithril'
 import { Provider } from 'mithril-redux'
 import App from './containers/App'
 import loadPolyfills from './utilities/loadPolyfills'
-import PersistGate from './utilities/react-redux/lib/integration/mithril'
+import PersistGate from './utilities/redux-persist/lib/integration/mithril'
 import configStore from './store/configStore'
 
 const { store, persistor } = configStore()
