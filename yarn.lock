@@ -3690,8 +3690,8 @@ mississippi@^1.3.0:
     through2 "^2.0.0"
 
 mithril-redux@oncomouse/mithril-redux:
-  version "2.0.4"
-  resolved "https://codeload.github.com/oncomouse/mithril-redux/tar.gz/530ac445db68687b60d6c3f6e53def762ea3f0e7"
+  version "2.1.0"
+  resolved "https://codeload.github.com/oncomouse/mithril-redux/tar.gz/cc57957c6ec691d2536f68f7ea9124158a27f30b"
   dependencies:
     mithril "^1.1.6"
 
