@@ -5,17 +5,17 @@ export default class Sample {
     view(vnode) {
         const { attrs } = vnode
         return m(
-            'div'
+            `div`
             , {}
             , m(
-                'ul'
+                `ul`
                 , {}
                 , attrs.samples.map((sample, id) =>
-                    m('li', { key: id }, m.trust(sample))
+                    m(`li`, { key: id }, m.trust(sample))
                 )
             )
-            , m('button', { onclick: attrs.sampleAction }, 'Click Me!')
-            , m('button', { onclick: attrs.resetAction }, 'Reset List')
+            , m(`button`, { onclick: attrs.sampleAction }, 'Click Me!')
+            , m(`button`, { onclick: attrs.resetAction }, 'Reset List')
         )
     }
 }
