@@ -5,9 +5,9 @@ import Button from '../components/Button'
 export default class Sample {
     view(vnode) {
         const { attrs } = vnode
-        return m('div'
+        return m(`div`
             , {}
-            , m('ul'
+            , m(`ul`
                 , {}
                 , attrs.samples.map((sample, id) =>
                     m('li', { key: id }, m.trust(sample))
@@ -19,7 +19,7 @@ export default class Sample {
             )
             , m(Button
                 , { onclick: attrs.resetAction, class: 'ml2' }
-                , 'Reset List'
+                , 'Reset List'·
             )
         )
     }

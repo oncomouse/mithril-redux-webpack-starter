@@ -28,11 +28,11 @@ class App {
 	view(vnode) {
 		const { state } = vnode
 		return m(`.sans-serif.pa3`, {},
-            m(Sample, {
-samples: state.props.samples
-, sampleAction: this.sampleEvent.bind(state)
-			         , resetAction: this.resetEvent.bind(state)
-		      })
+	        m(Sample, {
+				samples: state.props.samples
+				, sampleAction: this.sampleEvent.bind(state)
+				, resetAction: this.resetEvent.bind(state)
+			})
         )
 	}
 }

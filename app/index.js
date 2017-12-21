@@ -12,16 +12,9 @@ const render = () => {
         view: function() {
             return m(
                 PersistGate
-                , { persistor, loading: m('h1', {}, 'Loading…') }
+                , { persistor, loading: m(`h1`, {}, 'Loading…') }
                 , m(Provider.init(store, m, App))
             )
-            // You can also use JSX:
-            /*return (
-                <PersistGate persistor={persistor} loading={(<h1>Loading…</h1>)}>
-                    {m(Provider.init(store,m,App))}
-                </PersistGate>
-            )
-            */
         }
     })
 }
