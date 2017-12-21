@@ -24,7 +24,7 @@ const addProps = function(Component) {
             Component.prototype._prepropsOninit = Component.prototype.oninit
             Component.prototype.oninit = newOninit(this._prepropsOninit)
         } else {
-            Component.prototype.oninit = newOninit(function(){});
+            Component.prototype.oninit = newOninit(function(){})
         }
     } else {
         throw new Error(`${Component} was not a valid Mithril component.`)
