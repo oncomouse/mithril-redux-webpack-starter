@@ -8,4 +8,4 @@ You can use either [hyperscript](https://mithril.js.org/hyperscript.html) or [JS
 
 ## Stylesheets
 
-Include global SCSS code in `app/stylesheets/global.scss` and build CSS modules from the `app/stylesheets/components` directory. CSS files are processed via PostCSS and loaded via ExtractTextPlugin at build.
+Include global SCSS code in `app/stylesheets/global.scss`. Support for [CSS Modules](https://github.com/css-modules/css-modules) and [Tachyons](https://github.com/tachyons-css/tachyons-sass) is included. CSS files are processed via PostCSS and loaded via ExtractTextPlugin at build.
