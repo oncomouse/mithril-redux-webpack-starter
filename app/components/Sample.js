@@ -1,7 +1,6 @@
 import m from 'mithril'
+import Button from '../components/Button'
 //import styles from '../stylesheets/components/Sample.scss'
-// Tachyons is also loaded
-const BUTTON_STYLE = '.f6.link.dim.br3.ba.ph3.pv2.mb2.dib'
 
 export default class Sample {
     view(vnode) {
@@ -14,12 +13,12 @@ export default class Sample {
                     m('li', { key: id }, m.trust(sample))
                 )
             )
-            , m(`button${BUTTON_STYLE}.dark-blue.b--dark-blue`
-                , { onclick: attrs.sampleAction }
+            , m(Button
+                , { onclick: attrs.sampleAction, color: 'dark-blue' }
                 , 'Click Me!'
             )
-            , m(`button${BUTTON_STYLE}.ml2.mid-gray.b--mid-gray`
-                , { onclick: attrs.resetAction }
+            , m(Button
+                , { onclick: attrs.resetAction, class: 'ml2' }
                 , 'Reset List'
             )
         )
